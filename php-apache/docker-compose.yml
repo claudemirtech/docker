@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  apache:
+    build: './php/'
+    container_name: php7-apache2
+    restart: always
+    ports:
+      - '8001:80'
+    volumes:
+      - ./html:/var/www/html
+    networks:
+      - mysql_default
+      
+networks:
+  mysql_default:
+    external: true
