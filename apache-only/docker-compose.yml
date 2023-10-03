@@ -5,5 +5,5 @@ services:
   image: httpd
   volumes:
       - ./html:/usr/local/apache2/htdocs/
-    ports: 
+  ports: 
       - 8000:80

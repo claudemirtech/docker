@@ -5,7 +5,7 @@ services:
     image: microsoft/mssql-server-linux:latest
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=wS1q3Lf%U.O-m*
+      - SA_PASSWORD=<password>
     volumes:
       - c:\mssql:/var/opt/mssql
     ports: 

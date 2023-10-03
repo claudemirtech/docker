@@ -8,4 +8,4 @@ services:
     volumes:
       - ./data:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=<mydbpasswd>
+      - MYSQL_ROOT_PASSWORD=<password>
